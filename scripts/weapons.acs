@@ -1,0 +1,26 @@
+#library "WEAPONS"
+#include "zcommon.acs"
+
+script "ssdmEnterScript" ENTER
+{
+  ACS_NamedExecuteWithResult("ssdmOnPlayerEnter");
+}
+
+script "ssdmRespawnScript" RESPAWN
+{
+  ACS_NamedExecuteWithResult("ssdmOnPlayerEnter");
+}
+
+script "ssdmOnPlayerEnter" (void)
+{
+	if (GetCvar("instagib"))
+	{
+		ClearInventory();
+		GiveInventory("ShuckleBoltInsta", 1);
+	}
+	if (GetCvar("insultmatch"))
+	{
+		ClearInventory();
+		GiveInventory("ShuckleFistInsta", 1);
+	}
+}

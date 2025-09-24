@@ -1,0 +1,153 @@
+ACTOR HealthCandy : Health 16100
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Health Candies (25 HP)"
+  Inventory.Amount 25
+  Inventory.PickupMessage "Ate some health candies!"
+  Health.LowMessage 25, "Ate some REALLY tasty health candies!"
+  Scale 0.5
+  States
+  {
+  Spawn:
+    HL25 A -1 Bright
+    Stop
+  }
+}
+
+ACTOR BigHealthCandy : Health 16101
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Bag of Health Candies (50 HP)"
+  Inventory.Amount 50
+  Inventory.PickupMessage "Ate a bag of health candies!"
+  Health.LowMessage 25, "Ate a REALLY tasty bag of health candies!"
+  Scale 0.5
+  States
+  {
+  Spawn:
+    HL50 A -1 Bright
+    Stop
+  }
+}
+
+ACTOR MegaHealthCandy : Health 16102
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Mega Health Candy (100 HP)"
+  Inventory.Amount 100
+  Inventory.MaxAmount 200
+  Inventory.PickupMessage "Ate a giant health candy!"
+  Health.LowMessage 25, "Ate a REALLY tasty giant health candy!"
+  Scale 0.5
+  States
+  {
+  Spawn:
+    HLMG A -1 Bright
+    Stop
+  }
+}
+
+ACTOR LightShell : BasicArmorPickup 16103
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Light Shell (25AP, 15Save)"
+  Radius 20
+  Height 16
+  Inventory.PickupMessage "Wore a light shell!"
+  Inventory.Icon "ARM2A0"
+  Armor.SavePercent 15
+  Armor.SaveAmount 25
+  Scale 0.5
+  States
+  {
+  Spawn:
+    ARLT A 1 Bright
+    Loop
+  }
+}
+
+ACTOR MediumShell : BasicArmorPickup 16104
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Medium Shell (50AP, 25Save)"
+  Radius 20
+  Height 16
+  Inventory.PickupMessage "Wore a medium shell!"
+  Inventory.Icon "ARM2A0"
+  Armor.SavePercent 25
+  Armor.SaveAmount 50
+  Scale 0.5
+  States
+  {
+  Spawn:
+    ARMD A 1 Bright
+    Loop
+  }
+}
+
+ACTOR HeavyShell : BasicArmorPickup 16105
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Heavy Shell (100AP, 50Save)"
+  Radius 20
+  Height 16
+  Inventory.PickupMessage "Wore a heavy shell! Damn, this one's pretty cool."
+  Inventory.Icon "ARM2A0"
+  Armor.SavePercent 50
+  Armor.SaveAmount 100
+  Scale 0.5
+  States
+  {
+  Spawn:
+    ARHV A 1 Bright
+    Loop
+  }
+}
+
+ACTOR HealthCandySingle : Health 16106
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Single Heatlh Candy (5 HP)"
+  +COUNTITEM
+  +INVENTORY.ALWAYSPICKUP
+  Inventory.Amount 5
+  Inventory.MaxAmount 200
+  Inventory.PickupMessage "Ate a health candy!"
+  Scale 0.5
+  States
+  {
+  Spawn:
+    HLSH A 1
+    Loop
+  }
+}
+
+actor ShellShard : BasicArmorBonus 16107
+{
+  //$Not Angled
+  //$Category "Shuckle Shootout Pickups"
+  //$Title "Shell Shard (5AP, 15Save)"
+  inventory.pickupmessage "Picked up a shell shard."
+  inventory.icon "ARM1A0"
+  armor.savepercent 15
+  armor.saveamount 5
+  armor.maxsaveamount 200
+  //armor.maxbonus 1
+  //armor.maxbonusmax 50
+  +COUNTITEM
+  +INVENTORY.ALWAYSPICKUP
+  Scale 0.5
+  states
+  {
+  Spawn:
+    ARSH A 1
+    loop
+  }
+}

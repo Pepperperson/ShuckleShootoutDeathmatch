@@ -1,0 +1,81 @@
+ACTOR Sign 19000
+{
+	Radius 26
+	Height 72
+	States
+	{
+	Spawn:
+		SIGN A -1
+		Stop
+	}
+}
+ACTOR Sign2 19001
+{
+	Radius 26
+	Height 72
+	States
+	{
+	Spawn:
+		SIN2 A -1
+		Stop
+	}
+}
+ACTOR Corpse1 19002
+{
+	Radius 14
+	Height 35
+	States
+	{
+	Spawn:
+		CPS1 A -1
+		Stop
+	}
+}
+ACTOR Sign3 19003
+{
+	Radius 43
+	Height 64
+	States
+	{
+	Spawn:
+		SIN3 A -1
+		Stop
+	}
+}
+ACTOR TitleShuckle 19004
+{
+	Radius 10
+	Height 20
+	States
+	{
+	Spawn:
+		SHUC X -1
+		Loop
+	}
+}
+
+ACTOR LizardDecoration 19006
+{
+	Radius 35
+	Height 70
+	Mass 1000
+	+FLOORCLIP
+	States
+	{
+	Spawn:
+		TNT1 A 5
+		Loop
+	}
+}
+
+ACTOR CannonJohnson 19005
+{
+	Radius 147
+	Height 334
+	States
+	{
+		Spawn:
+			STUE A -1
+			Loop
+	}
+}

@@ -1,0 +1,167 @@
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+//THIS DOESNT WORK
+
+actor DoomCompat_Shotgun replaces Shotgun
+{
+	DropItem "Nailgun"
+}
+
+actor DoomCompat_SuperShotgun replaces SuperShotgun
+{
+	DropItem "ShuckleShotgun"
+}
+
+actor DoomCompat_Chaingun replaces Chaingun
+{
+	DropItem "Miniguns"
+}
+
+actor DoomCompat_RocketLauncher replaces RocketLauncher
+{
+	DropItem "ShuckleRL"
+}
+
+actor DoomCompat_PlasmaRifle replaces PlasmaRifle
+{
+	DropItem "ShuckleBolt"
+}
+
+actor DoomCompat_Chainsaw replaces Chainsaw
+{
+	DropItem "Killpill"
+}
+
+actor DoomCompat_BFG replaces BFG9000
+{
+	DropItem "AcceleratedBunghole"
+}
+
+//actor DoomCompat_AmmoBase
+//{
+//	+INVENTORY.ALWAYSPICKUP
+//	+INVENTORY.QUIET
+//}
+
+actor DoomCompat_Clip replaces Clip
+{
+	DropItem "PP"
+}
+
+actor DoomCompat_ClipBox replaces ClipBox
+{
+	DropItem "ShuckleBelt"
+}
+
+actor DoomCompat_Shell replaces Shell
+{
+	DropItem "ShuckleShells"
+}
+
+actor DoomCompat_ShellBox replaces ShellBox
+{
+	DropItem "ShuckleThunderMag"
+}
+
+actor DoomCompat_RocketAmmo replaces RocketAmmo
+{
+	DropItem "Pills"
+}
+
+actor DoomCompat_RocketBox replaces RocketBox
+{
+	DropItem "ShuckleRockets"
+}
+
+actor DoomCompat_Cell replaces Cell
+{
+	DropItem "Nails"
+}
+
+actor DoomCompat_CellPack replaces CellPack
+{
+	DropItem "ShuckleShells"
+}
+
+actor DoomCompat_Stimpack replaces Stimpack
+{
+	DropItem "HealthCandy"
+}
+
+actor DoomCompat_Medikit replaces Medikit
+{
+	DropItem "BigHealthCandy"
+}
+
+actor DoomCompat_Soulsphere replaces Soulsphere
+{
+	DropItem "MegaHealthCandy"
+}
+
+actor DoomCompat_GreenArmor replaces GreenArmor
+{
+	DropItem "MediumShell"
+}
+
+actor DoomCompat_BlueArmor replaces BlueArmor
+{
+	DropItem "HeavyShell"
+}
+
+actor DoomCompat_HealthBonus replaces HealthBonus
+{
+	DropItem "HealthCandySingle"
+}
+
+actor DoomCompat_ArmorBonus replaces ArmorBonus
+{
+	DropItem "ShellShard"
+}
+
+actor DoomCompat_Megasphere replaces Megasphere
+{
+	DropItem "AcceleratedBunghole"
+}
+
+actor DoomCompat_Allmap replaces Allmap
+{
+	DropItem "TV"
+}
+
+actor DoomCompat_Berserk replaces Berserk
+{
+	DropItem "TV"
+}
+
+actor DoomCompat_BlurSphere replaces BlurSphere
+{
+	DropItem "TV"
+}
+
+actor DoomCompat_Infrared replaces Infrared
+{
+	DropItem "TV"
+}
+
+actor DoomCompat_InvulnerabilitySphere replaces InvulnerabilitySphere
+{
+	DropItem "TV"
+}
+
+actor DoomCompat_RadSuit replaces RadSuit
+{
+	DropItem "TV"
+}

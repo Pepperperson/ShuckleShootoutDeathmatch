@@ -1,0 +1,257 @@
+ACTOR OranHeal : Health
+{
+	Inventory.PickupMessage ""
+	Inventory.Amount 25
+	Radius 30
+	Height 20
+	Speed -5
+	States
+	{
+	Spawn:
+		STIM A 3
+		TNT1 A 1 //A_Remove(AAPTR_DEFAULT)
+		Stop
+	}
+}
+
+ACTOR MudBombProjectile
+{
+	Radius 5
+	Height 5
+	Speed 80
+	Damage (25)
+	Projectile
+	Scale 0.5
+	DeathSound "weapons/mudbombhit"
+	Obituary "%o now looks like they're covered in shit."
+	States
+	{
+	Spawn:
+		MUDP AB 10
+		Loop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR LizardFireball
+{
+	Radius 11
+	Height 8
+	Speed 10
+	Damage 10
+	Projectile
+	+SEEKERMISSILE
+	+RANDOMIZE
+	SeeSound "skeleton/attack"
+	DeathSound "misc/explosion"
+	States
+	{
+	Spawn:
+		FATB ABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABA 2 Bright A_Tracer
+		FATB B 2 Bright A_Scream
+		Goto Death
+	Death:
+		FBXP A 8 Bright A_Explode
+		FBXP B 6 Bright
+		FBXP C 4 Bright
+		Stop
+	}
+}
+ACTOR Nail
+{
+	Radius 10
+	Height 8
+	Speed 40
+	Damage (20)
+	Projectile
+	DeathSound "weapons/nailgunimpact"
+	Obituary "%o was filled with holes by a nailgun."
+	States
+	{
+	Spawn:
+		NAIL A 1 Bright
+		Loop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}
+
+ACTOR ShuckleRocket  //i stole the doom rocket decorate code lmfao
+{
+  Radius 13
+  Height 10
+  Speed 50
+  Projectile
+  DeathSound "misc/explosion"
+  Obituary "%k made %o experience a quake moment"
+  Scale 2
+  States
+  {
+  Spawn:
+    RLPR AB 1 Bright
+    Loop
+  Death: 
+	wrcx a 0 Bright A_Explode(80, 100,XF_HURTSOURCE,0,15)
+	WRCX A 1 Bright 
+	WRCX A 0 Bright A_SetScale(1.8,1.8)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.6,1.6)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.4,1.4)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.2,1.2)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.0,1.0)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.8,0.8)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.6,0.6)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.4,0.4)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.2,0.2)
+	WRCX A 1 Bright A_FadeOut(0.1)
+    Stop
+  }
+}
+
+ACTOR ThunderGunPush : BulletPuff //unused
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+ALLOWPARTICLES
+	+ALWAYSPUFF
+	+PUFFONACTORS
+	+PUFFGETSOWNER
+	Mass 5
+	Projectile
+	States
+	{
+		Spawn:
+			PKOB A 50 Bright A_RadiusThrust(75,50,RTF_AFFECTSOURCE)
+		Death:
+			TNT1 A -1
+			Stop
+	}
+}
+
+ACTOR ShucklePill  //i stole the doom rocket decorate code lmfao
+{
+  Radius 13
+  Height 10
+  Speed 35
+  Projectile
+  Damage (10)
+  -NOGRAVITY
+  DeathSound "weapons/explosion2"
+  Obituary "%o took a lethal dose"
+  Scale 0.5
+  States
+  {
+  Spawn:
+    PRKP ABCDEFGH 2 Bright
+    Loop
+  Death: 
+	wrcx a 0 Bright A_Explode(40, 175,XF_HURTSOURCE,0,15)
+	wrcx a 0 Bright A_RadiusThrust(45, 175, RTF_AFFECTSOURCE)
+	WRCX A 1 Bright 
+	WRCX A 0 Bright A_SetScale(1.8,1.8)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.6,1.6)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.4,1.4)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.2,1.2)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(1.0,1.0)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.8,0.8)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.6,0.6)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.4,0.4)
+	WRCX A 1 Bright A_FadeOut(0.1)
+	WRCX A 0 Bright A_SetScale(0.2,0.2)
+	WRCX A 1 Bright A_FadeOut(0.1)
+    Stop
+  }
+}
+
+ACTOR AcceleratedBungholeExplosion
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+ALLOWPARTICLES
+	+ALWAYSPUFF
+	+PUFFONACTORS
+	+PUFFGETSOWNER
+	RenderStyle Translucent
+	Alpha 0.8
+	Scale 4
+	Mass 5
+	Projectile
+	Deathsound "weapons/bungholeexplosion"
+	Obituary "%o got fucking obliterated"
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			Goto Death
+		Death:
+			ABEX A 0 Bright A_Explode(150,250,XF_HURTSOURCE,0,100)
+			ABEX BCDEFGHIJKLMNOP 3 Bright
+			TNT1 A -1
+			Stop
+	}
+}
+
+ACTOR TVMissile
+{
+	Radius 24
+	Height 20
+	Speed 40
+	Damage (75)
+	Projectile
+	-NoGravity
+	DeathSound "weapons/shuckleshotgun"
+	Obituary "%o was bashed over the head."
+	States
+	{
+	Spawn:
+		TVVV A 1
+		Loop
+	Death:
+		WRCX A 5 A_Explode(30,75)
+		Stop
+	}
+}
+
+ACTOR Manhole
+{
+	Radius 15
+	Height 8
+	Speed 80
+	Damage (40)
+	Scale 0.5
+	Projectile
+	DeathSound "weapons/punch"
+	BounceSound "weapons/manholerico"
+	Obituary "%o was filled with holes by a nailgun."
+	BounceType Doom
+	BounceCount 4
+	States
+	{
+	Spawn:
+		MHPR AB 1
+		Loop
+	Bounce:
+		MHPR A 0 A_ChangeFlag("HITOWNER",1)
+		Goto Spawn
+	Death:
+		TNT1 A 1
+		Stop
+	}
+}

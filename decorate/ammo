@@ -1,0 +1,212 @@
+actor Oran : Ammo 16000
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Oran Berry"
+	Inventory.PickupMessage "Got an Oran Berry!"
+	Inventory.Amount 1
+	Inventory.MaxAmount 10
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 1
+	Ammo.BackpackMaxAmount 1
+	Scale 0.4
+	states
+	{
+	Spawn:
+		PKOB A -1
+		stop
+	}
+}
+actor PP : Ammo 16001
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "PP Up"
+	Inventory.PickupMessage "PP restored for Mud Bomb!"
+	Inventory.Amount 10
+	Inventory.MaxAmount 50
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 20
+	Ammo.BackpackMaxAmount 100
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMPP A -1
+		stop
+	}
+}
+
+actor TVAmmo : Ammo
+{
+	Inventory.PickupMessage "Holy shit, you can pick up two!"
+	Inventory.Amount 1
+	Inventory.MaxAmount 1
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 1
+	Ammo.BackpackMaxAmount 1
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMPP A -1
+		stop
+	}
+}
+
+actor ShuckleShells : Ammo 16002
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Box of Shotgun Shells"
+	Inventory.PickupMessage "Got some shotgun shells!"
+	Inventory.Amount 10
+	Inventory.MaxAmount 50
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 20
+	Ammo.BackpackMaxAmount 100
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMSG A -1
+		stop
+	}
+}
+
+actor ShuckleNails : Ammo 16003
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Box of Nails"
+	Inventory.PickupMessage "Got some nails!"
+	Inventory.Amount 25
+	Inventory.MaxAmount 100
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 20
+	Ammo.BackpackMaxAmount 200
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMNG A -1
+		stop
+	}
+}
+
+actor ShuckleRockets : Ammo //unused
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Rocket"
+	Inventory.PickupMessage "Got some rockets!"
+	Inventory.Amount 1
+	Inventory.MaxAmount 5
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 1
+	Ammo.BackpackMaxAmount 10
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMRL A -1
+		stop
+	}
+}
+
+actor ShuckleBelt : Ammo 16005
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Belt of Bullets"
+	Inventory.PickupMessage "Got a belt of bullets!"
+	Inventory.Amount 100
+	Inventory.MaxAmount 300
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 50
+	Ammo.BackpackMaxAmount 600
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMMG A -1
+		stop
+	}
+}
+
+actor ShuckleThunderMag : Ammo 16006
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Thunder Mag"
+	Inventory.PickupMessage "Got a thunder mag!"
+	Inventory.Amount 10
+	Inventory.MaxAmount 30
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 15
+	Ammo.BackpackMaxAmount 60
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMTG A -1
+		stop
+	}
+}
+
+actor PillAmmo : Ammo 16007
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Pills"
+	Inventory.PickupMessage "Got some pills!"
+	Inventory.Amount 5
+	Inventory.MaxAmount 15
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 5
+	Ammo.BackpackMaxAmount 30
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMKP A -1
+		stop
+	}
+}
+
+actor ShuckleManholes : Ammo 16004
+{
+	//$Not Angled
+	//$Category "Shuckle Shootout Ammo"
+	//$Title "Manholes"
+	Inventory.PickupMessage "Got some...manhole covers?"
+	Inventory.Amount 5
+	Inventory.MaxAmount 15
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 5
+	Ammo.BackpackMaxAmount 30
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMMH A -1
+		stop
+	}
+}
+
+actor BungholeAmmo : Ammo
+{
+	Inventory.PickupMessage "what are you doing"
+	Inventory.Amount 1
+	Inventory.MaxAmount 1
+	Inventory.Icon "CLIPA0"
+	Ammo.BackpackAmount 0
+	Ammo.BackpackMaxAmount 1
+	Scale 0.4
+	states
+	{
+	Spawn:
+		AMRL A -1
+		stop
+	}
+}

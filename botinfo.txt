@@ -1,0 +1,146 @@
+ClearBots
+
+{
+	name = "Shuckle"
+	script = "humanbot"
+	gender = "male"
+	color = "FF 1F 1F"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Wooper"
+	script = "humanbot"
+	gender = "male"
+	skin = "Wooper"
+	color = "7C CD DB"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Tangela"
+	script = "humanbot"
+	gender = "male"
+	skin = "Tangela"
+	color = "3B 78 E2"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Pingas"
+	script = "sausgbot"
+	gender = "male"
+	skin = "Pingas"
+	color = "96 3d 06"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Snark"
+	script = "humanbot"
+	gender = "male"
+	skin = "Snark"
+	color = "b5 1e 03"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Lil Cacodemon"
+	script = "humanbot"
+	gender = "male"
+	skin = "Lil Cacodemon"
+	color = "ed 28 28"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Bungy"
+	script = "humanbot"
+	gender = "male"
+	color = "FF 00 00"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Poop Nukem"
+	script = "humanbot"
+	gender = "male"
+	color = "FF 00 00"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "Cornholio"
+	script = "humanbot"
+	gender = "male"
+	color = "FF 00 00"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}
+
+{
+	name = "HUH!"
+	script = "humanbot"
+	gender = "male"
+	color = "FF 00 00"
+	revealed = "true"
+	accuracy = "3"
+	intellect = "3"
+	evade = "3"
+	anticipation = "4"
+	reactiontime = "4"
+	perception = "3"
+}

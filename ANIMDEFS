@@ -1,0 +1,25 @@
+texture AHEDSIN1
+    pic 1 tics 8
+    pic 2 tics 8
+    pic 3 tics 8
+	pic 4 tics 8
+
+texture FLSHWAL1
+    pic 1 tics 6
+    pic 2 tics 6
+    pic 3 tics 6
+	
+texture EGG1
+    pic 1 tics 8
+    pic 2 tics 8
+    pic 3 tics 8
+texture SHAMBLE1
+    pic 1 tics 2
+    pic 2 tics 2
+    pic 3 tics 2
+    pic 4 tics 2
+    pic 5 tics 2
+    pic 6 tics 2
+texture ILLEGAL1
+    pic 1 tics 12
+    pic 2 tics 12

@@ -1,0 +1,5 @@
+{
+    name = "SSDM Standard"
+    event = "myannouncer/event"
+    somethinghappens = "myannouncer/anothersound"
+}

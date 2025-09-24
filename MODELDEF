@@ -1,0 +1,28 @@
+//Model LizardDecoration
+//{
+//	Path "models/lizard"
+//	Model 0 "lizard.md2"
+//	Skin 0 "skin.bmp"
+//	Scale 3.0 3.0 3.0
+//	Offset 0 0 0
+//	
+//	Frame LZRD A 0 "idle1"
+//	Frame LZRD B 0 "idle2"
+//	Frame LZRD C 0 "idle3"
+//	Frame LZRD D 0 "run1"
+//	Frame LZRD E 0 "hurt1"
+//	Frame LZRD F 0 "death1"
+//	Frame LZRD G 0 "death2"
+//	Frame LZRD H 0 "death3"
+//	Frame LZRD I 0 "death4"
+//}
+
+//Model Wooper              // Name of actor in DECORATE
+//{
+//	Path "models/shambler"   // Path to model in PK3
+//	Model 0 "shambler.md2"   // Model index, model file
+//	Skin 0 "shambler.pcx"    // Model index, texture (can be in any format supported by GZDoom)
+//	Scale 1.0 1.0 1.0          // Scale values
+//	
+//	Frame PCHU A 0 "shit1"    // The sprite lump, sprite frame, model index, name of frame
+//}

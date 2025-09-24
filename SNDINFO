@@ -1,0 +1,63 @@
+healstart "sounds/STARTHEAL"
+heal "sounds/HEAL"
+shuckle/cry "sounds/SHUCKLE"
+pichu/cry "sounds/PICHU"
+lizard/sight "sounds/LIZARD"
+misc/explosion "sounds/EXPLODE"
+weapons/mudbomb "sounds/mudbomb.wav"
+weapons/mudbombhit "sounds/mudbombhit.wav"
+weapons/nailgun "sounds/fire_01.ogg"
+weapons/nailgunimpact "sounds/NAIL"
+weapons/rocket "sounds/sgun1.wav"
+weapons/miniguns "sounds/mingiun_altfire.wav"
+cbt9000 "sounds/cbt9000sight.wav"
+cbt9000death "sounds/cbtdeath1.wav"
+cbt9000pain "sounds/cbtpain1.wav"
+cbt9000slash "sounds/cbtslash1.wav"
+cbt9000idle "sounds/cbtidle.wav"
+silence "sounds/silence.wav"
+weapons/bolt "sounds/BLightningGunFire.wav"
+weapons/instabolt "sounds/SuperLightningGunFire.wav"
+weapons/shuckleshotgun "sounds/sbarrel1.wav"
+weapons/shuckleshotgunreload "sounds/reload3.wav"
+weapons/killpill "sounds/GrenadeLauncherFire.wav"
+weapons/explosion2 "sounds/Explosion02.wav"
+weapons/bunghole "sounds/RAILGF1A.WAV"
+weapons/bungholeexplosion "sounds/EXPLODEB.ogg"
+weapons/punch "sounds/punch.wav"
+weapons/manhole "sounds/razorjack_fire_old.wav"
+weapons/manholerico "sounds/razorjack_rico.wav"
+weapons/manholereload "sounds/reload3.wav"
+
+misc/w_pkup "sounds/marathon_pickup.wav"
+misc/i_pkup "sounds/marathon_pickup.wav"
+misc/spawn "sounds/itembk2.wav"
+
+$random middlefinger { middle1 middle2 middle3 middle4 middle5 middle6 middle7 }
+
+middle1 piecasht
+middle2 idgas
+middle3 fukuad
+middle4 fukndick
+middle5 fuckyou
+middle6 200pound
+middle7 yosfb
+
+$playersound shuckle male *jump "sounds/jump"
+$playersound shuckle male *usefail "sounds/usefail"
+$playersound shuckle male *death "sounds/death.wav"
+$playersound shuckle male *xdeath "sounds/death.wav"
+$playersound shuckle male *grunt "sounds/grunt.wav"
+$playersound shuckle male *pain100 "sounds/pain100.wav"
+$playersound shuckle male *pain75 "sounds/pain75.wav"
+$playersound shuckle male *pain50 "sounds/pain50.wav"
+$playersound shuckle male *pain25 "sounds/pain25.wav"
+$playersound shuckle male *taunt "sounds/taunt.wav"
+
+announcer/accuracy "sounds/announcer/accuracy.wav"
+announcer/asshole "sounds/announcer/asshole.wav"
+announcer/assist "sounds/announcer/assist.wav"
+announcer/blastthatass "sounds/announcer/blastthatass.wav"
+announcer/blueflagdropped "sounds/announcer/blueflagdropped.wav"
+announcer/blueflagreturned "sounds/announcer/blueflagreturned.wav"
+announcer/blueflagtaken "sounds/announcer/blueflagtaken.wav"

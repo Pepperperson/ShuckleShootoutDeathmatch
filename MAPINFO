@@ -1,0 +1,141 @@
+//////////////////////////////
+//Essential stuff
+//////////////////////////////
+
+GameInfo
+{
+	PlayerClasses = "Shuckle"
+	IntermissionMusic = "REST"
+}
+map TITLEMAP "Title Screen, which is the part where you start the game and if you're somehow actually able to play this level then you have done something extremely wrong unless actually it's something I did extremely wrong in which case you should probably let me know but anyway this is the map for the title screen because having a map for the title screen is apparently a thing that is possible and that's cool so I am doing it and of course 'it' means 'having a map as the title screen' but you already knew that and if you didn't then maybe there is something very wrong with you"
+{
+	music = "TITLEMAP"
+}
+
+//////////////////////////////
+//Deathmatch maps
+//////////////////////////////
+
+map SSDM01 "Disarmed Launch Site" //Original
+{
+	next = SSDM02
+	music = "SILIUS:2" //Journey to Silius - Stage 1 
+	sky1 = SKY2
+}
+
+map SSDM02 "Dongmatch 2" //Original, inspired by Dongmatch from The Battle for Takis
+{
+	next = SSDM03
+	music = THEBEEP //Street Fighter III: 3rd Strike - The Beep (Remy Stage)
+	sky1 = SKY1
+}
+
+map SSDM03 "Crimson Mansion" //Based on Nether Mansion from War:b:
+{
+	next = SSDM04
+	music = TRAINDNB //Street Fighter III: 2nd Impact - Get on a Train (Drum n bass mix)
+	sky1 = SKY1
+}
+
+map SSDM04 "Dock 07" //Original map
+{
+	next = SSDM05
+	music = "skogen14" //skogens djur 014 by Coma
+}
+
+map SSDM05 "Close Enough Crossfire" //Based on Crossfire from Half-Life
+{
+	next = SSDM06
+	music = "PKMNBATL" //Super Smash Bros. Melee - Pokémon Battle!
+	sky1 = SKY1
+}
+
+map SSDM06 "Alien Lifeform Analysis" //Original map
+{
+	next = SSDM07
+	music = "GODOWN" //Unreal Tournament - Go Down
+	sky1 = SKY1
+}
+
+map SSDM07 "Alien's Colosseum" //Original map
+{
+	next = SSDM08
+	music = "SICKONMO" //Sick on Monday by Elwood
+	sky1 = SKY1
+}
+
+map SSDM08 "Fuckle Forest" //Based on Forest from ball.pk3
+{
+	music = "GRNDCHRY" //Touhou 6 - A Soul as Scarlet as a Ground Cherry
+	skybox = "SKY4"
+}
+
+map SSDM09 "EXTREME City"
+{
+	music = "COMING" //can't stop coming by Azazel
+	skybox = "SKY5"
+}
+
+map SSDM10 "wooo pretty neon lites" //Original map
+{
+	music = "MINDSEYE" //Mind's Eye from Tempest 2000
+	skybox = "WHITE"
+}
+
+map SSDM11 "Bodies" //Based on Bodies from Blood
+{
+	music = "HAUNTED" //Jazz Belmont from Jazz Jackrabbit 2
+	skybox = "SKY1"
+}
+
+//////////////////////////////
+//Duel maps
+//////////////////////////////
+
+map SSDL01 "Berry Blastout" //Based on Ball Blastout from ball.pk3
+{
+	music = "WALUIGI" //Mario Kart DS - Waluigi Pinball
+}
+
+map SSDL06 "Terrawalk" //Original, inspired by Aerowalk from various arena shooters
+{
+	next = SSDL01
+	music = MTLSQUAD //Thunder Force IV - Metal Squad
+	sky1 = SKY1
+}
+
+//////////////////////////////
+//Shits n' giggles maps
+//////////////////////////////
+
+map SSSNG01 "Mr. Mime Target" //Based on Mime Target from Marathon Infinity
+{
+	next = SSSNG01
+	music = SEALCLOU //Touhou 12 - The Sealed Cloud Route
+	sky1 = SKY1
+}
+
+map SSSNG02 "Where Am I??"
+{
+	music = "deathegg"
+}
+
+//Legacy maps
+
+map OLDM03 "Crimson Mansion (Old)" //Based on Nether Mansion from War:b:
+{
+	next = SSDM01
+	music = TRAINDNB //Street Fighter III: 2nd Impact - Get on a Train (Drum n bass mix)
+	sky1 = SKY1
+}
+
+//////////////////////////////
+//Capture the flag maps
+//////////////////////////////
+
+map SSCTF01 "Eyesaur & Tsuyu's slightly better forest" //Original, inspired by Eyesaur & Tsuyu's forest from Super Smash Plush Battlefront II
+{
+	next = SSCTF01
+	music = AUTONOM //Autonomus by Skaven
+	sky1 = SKY1
+}

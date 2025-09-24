@@ -1,0 +1,17 @@
+DefaultGameSettings
+{
+	SV_WeaponStay = 0
+	SV_SpawnFarthest = 1
+	SV_NoMonsters = 1
+	SV_RespawnSuper = 1
+	SV_WeaponDrop = 1
+	SV_DoubleAmmo = 0
+	SV_Chasecam = 1
+	sv_headbob = 0
+	sv_quakethrust = 1
+	sv_accuratecrosshair = 1
+	sv_disablewallfriction = 1
+	sv_forcerespawn = 1
+	sv_forcerespawntime = 5
+	sv_ringouttics = 105
+}

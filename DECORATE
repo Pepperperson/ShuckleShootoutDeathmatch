@@ -1,0 +1,77 @@
+#include "decorate/weapons"
+#include "decorate/ammo"
+#include "decorate/projectiles"
+#include "decorate/decorations"
+#include "decorate/healtharmor"
+#include "decorate/doomcompat"
+
+ACTOR Shuckle : PlayerPawn
+{
+	Speed 1
+	Health 100
+	Radius 20
+	Height 30
+	Mass 25
+	Player.ViewHeight 20
+	PainChance 255
+	Player.DisplayName "Shuckle"
+	Player.StartItem "MudBomb"
+	Player.StartItem "ShuckleFist"
+	Player.StartItem "PP", 25
+	Player.StartItem "OranBerry"
+	Player.StartItem "Oran", 2
+	Player.WeaponSlot 1, TV, ShuckleFist
+	Player.WeaponSlot 2, MudBomb
+	Player.WeaponSlot 3, ShuckleShotgun
+	Player.WeaponSlot 4, Nailgun
+	Player.WeaponSlot 5, ShuckleManholeLauncher
+	Player.WeaponSlot 6, Miniguns
+	Player.WeaponSlot 7, ShuckleBolt
+	Player.WeaponSlot 8, Killpill
+	Player.WeaponSlot 9, AcceleratedBunghole
+	Player.WeaponSlot 0, OranBerry
+	Player.MvType 1
+	//+CPMAIRCONTROL
+	Player.AirAcceleration 0.1
+	Player.ForwardMove 0.8,0.8,0.8,0.8
+	Player.SideMove 0.84,1.05,0.88,0.84
+	Player.VelocityCap 350
+	Player.JumpDelay 0
+	Player.JumpXY 1
+	Player.SoundClass "shuckle"
+	Player.ColorRange 112, 127
+	Player.Colorset 0, "Green",			0x70, 0x7F,  0x72
+	Player.Colorset 1, "Gray",			0x60, 0x6F,  0x62
+	Player.Colorset 2, "Brown",			0x40, 0x4F,  0x42
+	Player.Colorset 3, "Red",			0x20, 0x2F,  0x22
+	States
+	{
+	Spawn:
+		SHUC A -1
+		Loop
+	See:
+		SHUC ABAC 4 
+		Loop
+	Missile:
+		SHUC DE 4
+		Goto Spawn
+	Melee:
+		SHUC D 1
+		Goto Missile
+	Pain:
+		SHUC F 4 
+		SHUC F 4 A_Pain
+		Goto Spawn
+	Death:
+		SHUC F 6
+		SHUC G 6 A_PlayerScream
+		SHUC HI 6 A_NoBlocking
+		SHUC J -1
+		Stop
+	}
+}
+
+actor ZoomVar : Inventory
+{
+	Inventory.MaxAmount 1
+}

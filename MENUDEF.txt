@@ -1,0 +1,44 @@
+ListMenu "MainMenu"
+{
+	StaticPatch 94, 2, "M_DOOM"
+	Position 97, 72
+	Font "DBIGFONT", "MenuWhite"
+	TextItem "Botmatch", "b", "ZA_SkirmishMenu"
+	TextItem "Player Setup", "p", "PlayerMenu"
+	TextItem "Multiplayer Options", "m", "ZA_MultiplayerOptions"
+	TextItem "Options", "o", "OptionsMenu"
+	TextItem "Quit", "q", "QuitMenu"
+}
+
+OptionValue ZA_Skill
+{
+	0, "1 - Free iPhone 2!"
+	1, "2 - Take it easy!"
+	2, "3 - There is no joke."
+	3, "4 - Something intense"
+	4, "5 - HOLY SHIT!"
+}
+
+OptionMenu ZA_SkirmishMenu
+{
+	Indent 153
+	Title		"BOTMATCH"
+	Option		"Map",				"menu_skirmishlevel",			"ZA_Levels"
+	Command		"Random Level",			"setskirmishlevel random"
+	Option		"Game Mode",			"menu_skirmishgamemode",		"ZA_Gamemode"
+	Option		"Modifier",				"menu_skirmishmodifier",		"ZA_Modifier"
+	StaticText	" "
+	NumberField	"Time limit",			"menu_skirmishtimelimit"
+	NumberField	"Fuckle limit",			"menu_skirmishfraglimit"
+	NumberField	"Point limit",			"menu_skirmishpointlimit"
+	NumberField	"Duel limit",			"menu_skirmishduellimit"
+	NumberField	"Win limit",				"menu_skirmishwinlimit"
+	NumberField	"Wave limit",			"menu_skirmishwavelimit", 0, 10
+	StaticText	" "
+	//Option		"Skill",				"menu_skirmishskill",			ZA_Skill
+	Option		"Botskill",				"menu_skirmishbotskill",		ZA_Skill
+	StaticText	" "
+	SubMenu		"Bot Setup",			"ZA_BotSetup"
+	StaticText	" "
+	Command		"Start Game!",			"menu_startskirmish"
+}

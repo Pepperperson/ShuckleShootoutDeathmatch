@@ -1,0 +1,84 @@
+{
+name = "Wooper"
+sprite = SK01
+*jump = SS01JMP
+*usefail = SS01USFL
+*grunt = SS01GRNT
+*death = SS01DETH
+*xdeath = SS01DETH
+*pain100 = SS01P100
+*pain75 = SS01P75
+*pain50 = SS01P50
+*pain25 = SS01P25
+*taunt = WOOPER
+color = 7ccddb
+class = "Shuckle"
+}
+
+{
+name = "Tangela"
+sprite = SK02
+*jump = SS02JMP
+*usefail = SS02USFL
+*grunt = SS02GRNT
+*death = SS02DETH
+*xdeath = SS02DETH
+*pain100 = SS02P100
+*pain75 = SS02P75
+*pain50 = SS02P50
+*pain25 = SS02P25
+*taunt = TANGELA
+color = 3b78e2
+class = "Shuckle"
+}
+
+{
+name = "Pingas"
+sprite = SK03
+*jump = SS03JMP
+*usefail = SS03USFL
+*grunt = SS03GRNT
+*pain100 = SS03P100
+*pain75 = SS03P100
+*pain50 = SS03P100
+*pain25 = SS03P100
+*death = SS03DETH
+*xdeath = SS03DETH
+*taunt = PINGAS
+color = 963d06
+class = "Shuckle"
+}
+
+{
+name = "Snark"
+sprite = SK04
+*jump = SS04JMP
+*usefail = SS04USFL
+*grunt = SS04GRNT
+*pain100 = SS04P100
+*pain75 = SS04P100
+*pain50 = SS04P100
+*pain25 = SS04P100
+*death = SS04DETH
+*xdeath = SS04DETH
+*taunt = SNARK
+color = b51e03
+class = "Shuckle"
+}
+
+{
+name = "Lil Cacodemon"
+sprite = SK05
+*jump = SS05JMP
+*usefail = SS05USFL
+*grunt = SS05GRNT
+*pain100 = SS05P100
+*pain75 = SS05P100
+*pain50 = SS05P100
+*pain25 = SS05P100
+*death = SS05DETH
+*xdeath = SS05DETH
+*taunt = CACO
+color = ed2828
+class = "Shuckle"
+}

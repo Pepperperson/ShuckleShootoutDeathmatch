@@ -1,0 +1,25 @@
+shuckle/cry "sounds/SHUCKLE"
+pichu/cry "sounds/PICHU"
+lizard/sight "sounds/LIZARD"
+misc/explosion "sounds/EXPLODE"
+
+weapons/bunghole "sounds/weapons/RAILGF1A.WAV"
+weapons/bungholeexplosion "sounds/weapons/EXPLODEB.ogg"
+
+$random middlefinger { middle1 middle2 middle3 middle4 middle5 middle6 middle7 }
+
+middle1 piecasht
+middle2 idgas
+middle3 fukuad
+middle4 fukndick
+middle5 fuckyou
+middle6 200pound
+middle7 yosfb
+
+announcer/accuracy "sounds/announcer/accuracy.wav"
+announcer/asshole "sounds/announcer/asshole.wav"
+announcer/assist "sounds/announcer/assist.wav"
+announcer/blastthatass "sounds/announcer/blastthatass.wav"
+announcer/blueflagdropped "sounds/announcer/blueflagdropped.wav"
+announcer/blueflagreturned "sounds/announcer/blueflagreturned.wav"
+announcer/blueflagtaken "sounds/announcer/blueflagtaken.wav"

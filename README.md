@@ -3,6 +3,7 @@ This is an edit of a game my buddy made for my birthday a couple years back, foc
 
 ## Features
 - Shuckle!
+- Hand-drawn MS Paint-y sprites
 - Simple movement, just jump while moving forward.
 - Many weapons, such as the Thunder Rifle, Killpill, & Mounted Miniguns
 - Easy to host using services such as [The Sentinel's Playground](https://allfearthesentinel.com/) & [Euroboros](https://euroboros.net/)
